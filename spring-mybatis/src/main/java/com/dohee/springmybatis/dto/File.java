@@ -1,0 +1,19 @@
+package com.dohee.springmybatis.dto;
+
+import java.util.Date;
+
+import lombok.Data;
+
+@Data
+public class File {
+    private int no;
+    private String parentTable;
+    private int parentNo;
+    private String fileName;
+    private String originName;
+    private String filePath;
+    private long fileSize;
+    private Date regDate;
+    private Date updDate;
+    private int fileCode;
+}

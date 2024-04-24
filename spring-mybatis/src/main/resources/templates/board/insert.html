@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 작성</title>
+</head>
+<body>
+    <h1>게시글 작성</h1>
+
+    <form action="/board/insert" method="post">
+
+        <label for="title">제목: </label>
+        <input type="text" name="title" id="title">
+        <br>
+        <label for="title">작성자: </label>
+        <input type="text" name="writer" id="writer">
+        <br>
+        <label for="title">내용: </label>
+        <textarea name="content" id="content" cols="20" rows="10"></textarea>
+        <br>
+        <button type="submit">등록</button>
+        <button type="button" onclick="moveToList()">목록</button>
+    </form>
+
+    <script>
+        function moveToList() {
+            location.href = "/board/list";
+        }
+    </script>
+</body>
+</html>
